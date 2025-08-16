@@ -42,31 +42,26 @@ const CVConfig = {
     // Experiencia Laboral
     experience: [
         {
-            title: "Desarrollador 101 Software",
-            company: "Codeskills Solution",
+            title: "Desarrollador 101 software",
+            company: "101 SOFTWARE",
             period: "Nov 2024 - Presente",
             responsibilities: [
-                "Creación de páginas web completas utilizando Angular y .NET",
-                "Desarrollo de APIs REST robustas con C# y ASP.NET Web API",
-                "Implementación de interfaces de usuario modernas con Angular y TypeScript",
-                "Diseño y administración de bases de datos SQL Server",
-                "Integraciones avanzadas con múltiples pasarelas de pagos",
-                "Trabajo remoto con reuniones diarias y metodología Scrum",
-                "Control de versiones con Git y GitHub"
+                "Desarrollador de aplicaciones WPF, para quioscos agilizadores, utilizando tecnología como .NET para backend",
+                "Las interfaces de usuario en WPF, bases de datos SQL Server, SQLite",
+                "Integraciones con múltiples pasarelas de pago, con datáfonos lectores de QR, de palma, biométricos",
+                "Trabajando de la mano con el equipo de hardware, en implementaciones diversas y funcionales de este tipo de cajeros"
             ]
         },
         {
-            title: "Software Developer",
+            title: "Sotfware developer codeskills solution",
             company: "Codeskills Solution",
-            period: "Oct 2022 - Sep 2024 (24 meses y 13 días)",
+            period: "OCT 2022- Sep 2024",
             responsibilities: [
-                "Implementación de quioscos agilizadores para pagos utilizando WPF",
-                "Desarrollo de aplicaciones de escritorio robustas con .NET y XAML",
-                "Integraciones complejas con múltiples pasarelas de pago",
-                "Desarrollo de conectividad con periféricos: datáfonos, lectores QR, biométricos y de palma",
-                "Administración y optimización de bases de datos SQL Server y SQLite",
-                "Implementación del patrón MVVM en aplicaciones WPF",
-                "Colaboración estrecha con equipo de hardware para soluciones integrales"
+                "Desarrollador de aplicaciones, utilizando tecnologías como .NET, desarrollando API REST con C#",
+                "Implementación de interfaces con Angular, las bases de datos se realizan en SQL Server",
+                "Realizamos integraciones de pasarelas de pagos, sistema de trabajo remoto con reuniones diarias",
+                "Un sistema Scrum para mejor eficiencia, usando Git para control de versiones",
+                "Tiempo de obra laboral: 24 meses y 13 días"
             ]
         }
     ],

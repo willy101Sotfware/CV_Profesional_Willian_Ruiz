@@ -503,42 +503,42 @@ body {
     body {
         padding: 10px;
     }
-    
+
     .container {
         border-radius: 15px;
     }
-    
+
     .header {
         padding: 30px 20px;
     }
-    
+
     .profile-section {
         flex-direction: column;
         text-align: center;
         gap: 20px;
     }
-    
+
     .name {
         font-size: 2.5rem;
     }
-    
+
     .title {
         font-size: 1.2rem;
     }
-    
+
     .main-content {
         padding: 30px 20px;
     }
-    
+
     .section-content {
         padding-left: 20px;
     }
-    
+
     .experience-header {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .skills-grid,
     .certification-grid,
     .languages-grid {
@@ -550,11 +550,11 @@ body {
     .name {
         font-size: 2rem;
     }
-    
+
     .contact-info {
         grid-template-columns: 1fr;
     }
-    
+
     .section-content {
         padding-left: 10px;
     }
@@ -566,23 +566,23 @@ body {
         background: white;
         padding: 0;
     }
-    
+
     .container {
         box-shadow: none;
         border-radius: 0;
     }
-    
+
     .header {
         background: #2c3e50 !important;
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
-    
+
     .section {
         break-inside: avoid;
         margin-bottom: 30px;
     }
-    
+
     .experience-item,
     .project-item {
         break-inside: avoid;
