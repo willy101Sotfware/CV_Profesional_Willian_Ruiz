@@ -224,6 +224,6 @@ Si necesitas ayuda para personalizar tu CV:
 
 ---
 
-**¡Tu CV profesional está listo! 🎉**
+**¡listo! 🎉**
 
-Recuerda mantenerlo actualizado y personalizado según el puesto al que apliques.
+
