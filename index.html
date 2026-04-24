@@ -4,164 +4,474 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Willian Ruiz - Curriculum Vitae</title>
+    <meta name="description" content="Willian Ruiz - Técnico en Desarrollo de Software con experiencia en .NET, WPF, Angular y más">
+    <title>Willian Ruiz - Desarrollador de Software</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="container">
-        <!-- Header Section -->
-        <header class="header">
-            <div class="profile-section">
-                <div class="profile-image">
-                    <i class="fas fa-user-circle"></i>
-                </div>
-                <div class="profile-info">
-                    <h1 class="name">WILLIAN RUIZ Z</h1>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>(57) 3147743846</span>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">WR</a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#inicio" class="nav-link active">Inicio</a>
+                <a href="#experiencia" class="nav-link">Experiencia</a>
+                <a href="#habilidades" class="nav-link">Habilidades</a>
+                <a href="#proyectos" class="nav-link">Proyectos</a>
+                <a href="#educacion" class="nav-link">Educación</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-toggle" id="navToggle" aria-label="Menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="inicio">
+        <div class="hero-bg">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-subtitle">👋 ¡Hola! Soy</span>
+                    <h1 class="hero-title">Willian Ruiz</h1>
+                    <h2 class="hero-role">Técnico en Desarrollo de Software</h2>
+                    <p class="hero-description">
+                        Con más de <strong>3 años de experiencia</strong> creando soluciones tecnológicas 
+                        innovadoras para aplicaciones de escritorio, web y sistemas interactivos.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Años de Experiencia</span>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-mobile-alt"></i>
-                            <span>(57)317 862 59 55</span>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Proyectos Completados</span>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Bello Antioquia</span>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Certificaciones</span>
                         </div>
-                        <div class="contact-item">
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#contacto" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Contáctame
+                        </a>
+                        <a href="#proyectos" class="btn btn-secondary">
+                            <i class="fas fa-folder-open"></i>
+                            Ver Proyectos
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://github.com/" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:Wilyd2@hotmail.com" class="social-link" aria-label="Email">
                             <i class="fas fa-envelope"></i>
-                            <span>Wilyd2@hotmail.com</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="profile-badge">
+                            <i class="fas fa-check-circle"></i>
+                            Disponible para trabajar
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#experiencia" aria-label="Scroll down">
+                <span class="mouse">
+                    <span class="mouse-wheel"></span>
+                </span>
+                <span class="scroll-text">Scroll</span>
+            </a>
+        </div>
+    </header>
 
-        <!-- Main Content -->
-        <main class="main-content">
-            <!-- Professional Summary -->
-            <section class="section">
-                <div class="section-content">
-                    <p class="summary">
-                        🎯 Técnico en Desarrollo de Software con más de 3 años de experiencia en el desarrollo de
-                        soluciones tecnológicas para aplicaciones de escritorio, web y sistemas interactivos.
-                    </p>
-                    <p class="summary">
-                        💡 Me destaco por mi compromiso con la calidad, atención al detalle y capacidad para desarrollar
-                        soluciones sólidas tanto en entornos de escritorio como web.
-                    </p>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Experience Section -->
+        <section class="section" id="experiencia">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Mi Trayectoria</span>
+                    <h2 class="section-title">
+                        <i class="fas fa-briefcase"></i>
+                        Experiencia Laboral
+                    </h2>
+                    <p class="section-subtitle">Profesional con experiencia en desarrollo de software empresarial</p>
                 </div>
-            </section>
-
-            <!-- Education -->
-            <section class="section">
-                <h3 class="section-title">
-                    <i class="fas fa-graduation-cap"></i>
-                    EDUCACIÓN
-                </h3>
-                <div class="section-content">
-                    <div class="education-item">
-                        <h4>Técnico Desarrollo de software</h4>
-                        <span class="institution">CESDE centro estudios especializados</span>
-                        <span class="period">OCT 2022</span>
-                        <span class="location">Medellín, Colombia: ¡Graduado!</span>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="job-title">Desarrollador de Software</h3>
+                                    <span class="company">
+                                        <i class="fas fa-building"></i>
+                                        101 Software
+                                    </span>
+                                </div>
+                                <div class="timeline-meta">
+                                    <span class="period">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        Nov 2024 - Presente
+                                    </span>
+                                    <span class="location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Medellín, Colombia
+                                    </span>
+                                </div>
+                            </div>
+                            <p class="job-description">
+                                Desarrollo de aplicaciones WPF para quioscos agilizadores de última generación, 
+                                integrando múltiples tecnologías de hardware y software para crear soluciones 
+                                de autoservicio completas.
+                            </p>
+                            <ul class="job-responsibilities">
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    Desarrollo de aplicaciones WPF con arquitectura MVVM utilizando .NET
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    Integración con pasarelas de pago (datáfonos, lectores QR, biométricos, palm scan)
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    Gestión de bases de datos SQL Server y SQLite con optimización de consultas
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    Colaboración estrecha con equipos de hardware para implementaciones funcionales
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    Implementación de patrones de diseño y mejores prácticas de código limpio
+                                </li>
+                            </ul>
+                            <div class="job-tech">
+                                <span class="tech-badge">.NET</span>
+                                <span class="tech-badge">WPF</span>
+                                <span class="tech-badge">C#</span>
+                                <span class="tech-badge">SQL Server</span>
+                                <span class="tech-badge">SQLite</span>
+                                <span class="tech-badge">MVVM</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="additional-info">
-                        <p><strong>Idiomas:</strong> Español (nativo)</p>
-                        <p><strong>Deportes:</strong> Fútbol y ajedrez</p>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="job-title">Software Developer</h3>
+                                    <span class="company">
+                                        <i class="fas fa-building"></i>
+                                        CodeSkills Solution
+                                    </span>
+                                </div>
+                                <div class="timeline-meta">
+                                    <span class="period">
+                                        <i class="fas fa-calendar-alt"></i>
+                                        Oct 2022 - Sep 2024
+                                    </span>
+                                    <span class="location">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        Remoto
+                                    </span>
+                                </div>
+                            </div>
+                            <p class="job-description">
+                                Desarrollo full-stack de aplicaciones empresariales utilizando tecnologías .NET 
+                                y Angular, con enfoque en arquitectura limpia y metodologías ágiles.
+                            </p>
+                            <ul class="job-responsibilities">
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    Desarrollo de APIs RESTful con C# y .NET Core siguiendo Clean Architecture
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    Implementación de interfaces de usuario responsivas con Angular y TypeScript
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    Diseño y optimización de bases de datos SQL Server
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    Integración de pasarelas de pago y servicios de terceros
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    Participación activa en reuniones diarias y sprint planning (Scrum)
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    Control de versiones con Git y Code Reviews
+                                </li>
+                            </ul>
+                            <div class="job-tech">
+                                <span class="tech-badge">C#</span>
+                                <span class="tech-badge">.NET Core</span>
+                                <span class="tech-badge">Angular</span>
+                                <span class="tech-badge">TypeScript</span>
+                                <span class="tech-badge">SQL Server</span>
+                                <span class="tech-badge">Git</span>
+                                <span class="tech-badge">Scrum</span>
+                            </div>
+                            <div class="job-duration">
+                                <i class="fas fa-clock"></i>
+                                Duración: 24 meses y 13 días
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Certifications -->
-            <section class="section">
-                <h3 class="section-title">
-                    <i class="fas fa-certificate"></i>
-                    CERTIFICACIONES
-                </h3>
-                <div class="section-content">
-                    <div class="certification-grid">
-                        <div class="certification-item">
-                            <h4>METODOLOGIAS AGILES universidad UCO</h4>
+        <!-- Skills Section -->
+        <section class="section section-alt" id="habilidades">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Competencias</span>
+                    <h2 class="section-title">
+                        <i class="fas fa-code"></i>
+                        Habilidades Técnicas
+                    </h2>
+                    <p class="section-subtitle">Tecnologías y herramientas que domino</p>
+                </div>
+                <div class="skills-container">
+                    <div class="skills-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-laptop-code"></i>
+                            Lenguajes de Programación
+                        </h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">C#</span>
+                                    <span class="skill-level">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">TypeScript</span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML5 / CSS3</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="certification-item">
-                            <h4>Complete C# Masterclass (Udemy)</h4>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-layer-group"></i>
+                            Frameworks y Librerías
+                        </h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">.NET / .NET Core</span>
+                                    <span class="skill-level">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">WPF</span>
+                                    <span class="skill-level">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Angular</span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Bootstrap</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="certification-item">
-                            <h4>Flutter de Cero a Experto (Udemy)</h4>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-database"></i>
+                            Bases de Datos
+                        </h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQL Server</span>
+                                    <span class="skill-level">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">SQLite</span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="certification-item">
-                            <h4>Angular - The Complete Guide (Udemy)</h4>
-                        </div>
-                        <div class="certification-item">
-                            <h4>ASP.NET Clean Architecture y Domain Driven Design (DDD)</h4>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-tools"></i>
+                            Herramientas y Metodologías
+                        </h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git / GitHub</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Scrum / Ágil</span>
+                                    <span class="skill-level">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">Clean Architecture</span>
+                                    <span class="skill-level">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name">DDD</span>
+                                    <span class="skill-level">75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Experience -->
-            <section class="section">
-                <h3 class="section-title">
-                    <i class="fas fa-briefcase"></i>
-                    EXPERIENCIA LABORAL
-                </h3>
-                <div class="section-content">
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <h4 class="job-title">Desarrollador 101 software</h4>
-                            <span class="period">Nov 2024 - Presente</span>
-                        </div>
-                        <p class="experience-description">
-                            Desarrollador de aplicaciones WPF, para quioscos agilizadores, utilizando tecnología como .NET
-                            para backend, las interfaces de usuario en WPF, bases de datos SQL Server, SQLite, integraciones
-                            con múltiples pasarelas de pago, con datáfonos lectores de QR, de palma, biométricos,
-                            trabajando de la mano con el equipo de hardware, en implementaciones diversas y funcionales
-                            de este tipo de cajeros.
-                        </p>
-                    </div>
-
-                    <div class="experience-item">
-                        <div class="experience-header">
-                            <h4 class="job-title">Sotfware developer codeskills solution</h4>
-                            <span class="period">OCT 2022- Sep 2024</span>
-                        </div>
-                        <p class="experience-description">
-                            Desarrollador de aplicaciones, utilizando tecnologías como .NET, desarrollando API REST con C#.
-                            Implementación de interfaces con Angular, las bases de datos se realizan en SQL Server.
-                            Realizamos integraciones de pasarelas de pagos, sistema de trabajo remoto con reuniones
-                            diarias, un sistema Scrum para mejor eficiencia, usando Git para control de versiones. Tiempo de
-                            obra laboral: 24 meses y 13 días.
-                        </p>
-                    </div>
-                    
-                    <div class="skills-summary">
-                        <p><strong>Habilidades:</strong> C#, .NET, WPF, SQL SERVER ,Angular, TypeScript, HTML, CSS, Bootstrap,
-                        GitHub, Metodologías Ágiles, Corel Draw.</p>
-                    </div>
+        <!-- Projects Section -->
+        <section class="section" id="proyectos">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Portafolio</span>
+                    <h2 class="section-title">
+                        <i class="fas fa-project-diagram"></i>
+                        Proyectos Destacados
+                    </h2>
+                    <p class="section-subtitle">Soluciones que he desarrollado</p>
                 </div>
-            </section>
-
-            <!-- Projects -->
-            <section class="section">
-                <h3 class="section-title">
-                    <i class="fas fa-project-diagram"></i>
-                    Proyectos Destacados
-                </h3>
-                <div class="section-content">
-                    <div class="project-item">
-                        <h4 class="project-title">Quioscos Agilizadores WPF</h4>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-cash-register"></i>
+                            </div>
+                            <span class="project-badge">En Producción</span>
+                        </div>
+                        <h3 class="project-title">Quioscos Agilizadores WPF</h3>
                         <p class="project-description">
-                            Desarrollo de aplicaciones WPF para quioscos agilizadores con integraciones
-                            de pasarelas de pago, datáfonos, lectores QR y sistemas biométricos.
+                            Sistema completo de quioscos de autoservicio para puntos de venta, integrando 
+                            múltiples periféricos de hardware y pasarelas de pago para ofrecer una experiencia 
+                            de compra fluida y segura.
                         </p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check-circle"></i> Integración con datáfonos y lectores QR</li>
+                            <li><i class="fas fa-check-circle"></i> Autenticación biométrica y por palma</li>
+                            <li><i class="fas fa-check-circle"></i> Múltiples pasarelas de pago</li>
+                            <li><i class="fas fa-check-circle"></i> Interfaz táctil intuitiva</li>
+                        </ul>
                         <div class="project-tech">
                             <span class="tech-tag">.NET</span>
                             <span class="tech-tag">WPF</span>
@@ -169,140 +479,286 @@
                             <span class="tech-tag">SQL Server</span>
                             <span class="tech-tag">SQLite</span>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-item">
-                        <h4 class="project-title">API REST con Clean Architecture</h4>
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <span class="project-badge">Arquitectura</span>
+                        </div>
+                        <h3 class="project-title">API REST con Clean Architecture</h3>
                         <p class="project-description">
-                            Desarrollo de API REST utilizando C# y .NET con implementación
-                            de Clean Architecture y Domain Driven Design (DDD).
+                            API REST empresarial desarrollada siguiendo los principios de Clean Architecture 
+                            y Domain Driven Design (DDD), garantizando código mantenible, escalable y testeable.
                         </p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check-circle"></i> Arquitectura en capas separadas</li>
+                            <li><i class="fas fa-check-circle"></i> Inversión de dependencias</li>
+                            <li><i class="fas fa-check-circle"></i> Domain Driven Design</li>
+                            <li><i class="fas fa-check-circle"></i> Patrón Repository y Unit of Work</li>
+                        </ul>
                         <div class="project-tech">
                             <span class="tech-tag">C#</span>
-                            <span class="tech-tag">.NET</span>
+                            <span class="tech-tag">.NET Core</span>
                             <span class="tech-tag">SQL Server</span>
                             <span class="tech-tag">Clean Architecture</span>
                             <span class="tech-tag">DDD</span>
                         </div>
-                    </div>
+                    </article>
 
-                    <div class="project-item">
-                        <h4 class="project-title">Interfaces Web con Angular</h4>
+                    <article class="project-card">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-desktop"></i>
+                            </div>
+                            <span class="project-badge">Frontend</span>
+                        </div>
+                        <h3 class="project-title">Interfaces Web con Angular</h3>
                         <p class="project-description">
-                            Implementación de interfaces de usuario modernas utilizando Angular
-                            y TypeScript, integradas con APIs REST desarrolladas en .NET.
+                            Desarrollo de interfaces de usuario modernas, responsivas y accesibles utilizando 
+                            Angular, integradas con APIs REST para aplicaciones empresariales.
                         </p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check-circle"></i> Componentes reutilizables</li>
+                            <li><i class="fas fa-check-circle"></i> Diseño responsive y mobile-first</li>
+                            <li><i class="fas fa-check-circle"></i> Integración con APIs REST</li>
+                            <li><i class="fas fa-check-circle"></i> Gestión de estado con RxJS</li>
+                        </ul>
                         <div class="project-tech">
                             <span class="tech-tag">Angular</span>
                             <span class="tech-tag">TypeScript</span>
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
                             <span class="tech-tag">Bootstrap</span>
                         </div>
-                    </div>
-
+                    </article>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Education -->
-            <section class="section">
-                <h3 class="section-title">
-                    <i class="fas fa-graduation-cap"></i>
-                    Formación Académica
-                </h3>
-                <div class="section-content">
-                    <div class="education-item">
-                        <h4 class="degree">Técnico en Desarrollo de Software</h4>
-                        <span class="institution">CESDE - Centro de Estudios Especializados</span>
-                        <span class="period">Oct 2022</span>
-                        <span class="location">Medellín, Colombia - ¡Graduado!</span>
-                        <p class="education-description">
-                            Formación especializada en desarrollo de software con enfoque en tecnologías .NET,
-                            bases de datos y metodologías ágiles.
-                        </p>
-                    </div>
+        <!-- Education Section -->
+        <section class="section section-alt" id="educacion">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Formación</span>
+                    <h2 class="section-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        Educación y Certificaciones
+                    </h2>
+                    <p class="section-subtitle">Mi formación académica y profesional</p>
                 </div>
-            </section>
-
-            <!-- Certifications -->
-            <section class="section">
-                <h3 class="section-title">
-                    <i class="fas fa-certificate"></i>
-                    Certificaciones y Cursos
-                </h3>
-                <div class="section-content">
-                    <div class="certification-grid">
-                        <div class="certification-item">
-                            <h4>METODOLOGÍAS ÁGILES</h4>
-                            <span class="cert-provider">Universidad UCO</span>
-                            <span class="cert-year">2023</span>
-                        </div>
-                        <div class="certification-item">
-                            <h4>Complete C# Masterclass</h4>
-                            <span class="cert-provider">Udemy</span>
-                            <span class="cert-year">2023</span>
-                        </div>
-                        <div class="certification-item">
-                            <h4>Flutter de Cero a Experto</h4>
-                            <span class="cert-provider">Udemy</span>
-                            <span class="cert-year">2023</span>
-                        </div>
-                        <div class="certification-item">
-                            <h4>Angular - The Complete Guide</h4>
-                            <span class="cert-provider">Udemy</span>
-                            <span class="cert-year">2023</span>
-                        </div>
-                        <div class="certification-item">
-                            <h4>ASP.NET Clean Architecture y DDD</h4>
-                            <span class="cert-provider">Udemy</span>
-                            <span class="cert-year">2023</span>
+                <div class="education-grid">
+                    <div class="education-main">
+                        <div class="education-card">
+                            <div class="education-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="education-content">
+                                <h3>Técnico en Desarrollo de Software</h3>
+                                <span class="institution">CESDE - Centro de Estudios Especializados</span>
+                                <span class="education-period">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    Octubre 2022
+                                </span>
+                                <span class="education-status">
+                                    <i class="fas fa-check-circle"></i>
+                                    ¡Graduado!
+                                </span>
+                                <p class="education-description">
+                                    Formación especializada en desarrollo de software con enfoque práctico en 
+                                    tecnologías .NET, bases de datos relacionales y metodologías ágiles de desarrollo.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-
-            <!-- Languages -->
-            <section class="section">
-                <h3 class="section-title">
-                    <i class="fas fa-language"></i>
-                    Idiomas
-                </h3>
-                <div class="section-content">
-                    <div class="languages-grid">
-                        <div class="language-item">
-                            <span class="language">Español</span>
-                            <span class="level">Nativo</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Interests -->
-            <section class="section">
-                <h3 class="section-title">
-                    <i class="fas fa-heart"></i>
-                    Intereses y Hobbies
-                </h3>
-                <div class="section-content">
-                    <div class="interests-grid">
-                        <div class="interest-item">
-                            <i class="fas fa-futbol"></i>
-                            <span>Fútbol</span>
-                        </div>
-                        <div class="interest-item">
-                            <i class="fas fa-chess"></i>
-                            <span>Ajedrez</span>
-                        </div>
-                        <div class="interest-item">
-                            <i class="fas fa-laptop-code"></i>
-                            <span>Tecnología</span>
+                    <div class="certifications-grid">
+                        <h3 class="certifications-title">
+                            <i class="fas fa-certificate"></i>
+                            Certificaciones y Cursos
+                        </h3>
+                        <div class="cert-list">
+                            <div class="cert-item">
+                                <div class="cert-icon">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div class="cert-content">
+                                    <h4>Metodologías Ágiles</h4>
+                                    <span class="cert-provider">Universidad UCO</span>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <div class="cert-icon">
+                                    <i class="fab fa-microsoft"></i>
+                                </div>
+                                <div class="cert-content">
+                                    <h4>Complete C# Masterclass</h4>
+                                    <span class="cert-provider">Udemy</span>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <div class="cert-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <div class="cert-content">
+                                    <h4>Flutter de Cero a Experto</h4>
+                                    <span class="cert-provider">Udemy</span>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <div class="cert-icon">
+                                    <i class="fab fa-angular"></i>
+                                </div>
+                                <div class="cert-content">
+                                    <h4>Angular - The Complete Guide</h4>
+                                    <span class="cert-provider">Udemy</span>
+                                </div>
+                            </div>
+                            <div class="cert-item">
+                                <div class="cert-icon">
+                                    <i class="fas fa-sitemap"></i>
+                                </div>
+                                <div class="cert-content">
+                                    <h4>ASP.NET Clean Architecture y DDD</h4>
+                                    <span class="cert-provider">Udemy</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
-    </div>
+                <div class="additional-info">
+                    <div class="info-card">
+                        <i class="fas fa-language"></i>
+                        <h4>Idiomas</h4>
+                        <p>Español (Nativo)</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-heart"></i>
+                        <h4>Intereses</h4>
+                        <p>Fútbol, Ajedrez, Tecnología</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contacto">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">¿Hablamos?</span>
+                    <h2 class="section-title">
+                        <i class="fas fa-envelope"></i>
+                        Contacto
+                    </h2>
+                    <p class="section-subtitle">Estoy disponible para nuevas oportunidades</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info-card">
+                        <h3>Información de Contacto</h3>
+                        <p>¿Tienes un proyecto en mente o una oportunidad laboral? ¡No dudes en contactarme!</p>
+                        <div class="contact-methods">
+                            <a href="tel:+573147743846" class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Teléfono</span>
+                                    <span class="contact-value">(57) 314 774 3846</span>
+                                </div>
+                            </a>
+                            <a href="tel:+573178625955" class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Móvil</span>
+                                    <span class="contact-value">(57) 317 862 59 55</span>
+                                </div>
+                            </a>
+                            <a href="mailto:Wilyd2@hotmail.com" class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Email</span>
+                                    <span class="contact-value">Wilyd2@hotmail.com</span>
+                                </div>
+                            </a>
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <span class="contact-label">Ubicación</span>
+                                    <span class="contact-value">Bello, Antioquia, Colombia</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-social">
+                            <span>Sígueme en:</span>
+                            <div class="social-links">
+                                <a href="https://github.com/" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-cta">
+                        <div class="cta-content">
+                            <div class="cta-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3>¿Listo para trabajar juntos?</h3>
+                            <p>Descarga mi CV completo o contáctame directamente</p>
+                            <div class="cta-buttons">
+                                <button class="btn btn-primary btn-download" id="downloadBtn">
+                                    <i class="fas fa-download"></i>
+                                    Descargar CV
+                                </button>
+                                <a href="mailto:Wilyd2@hotmail.com" class="btn btn-secondary">
+                                    <i class="fas fa-envelope"></i>
+                                    Enviar Email
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">WR</span>
+                    <p>Willian Ruiz - Desarrollador de Software</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#experiencia">Experiencia</a>
+                    <a href="#habilidades">Habilidades</a>
+                    <a href="#proyectos">Proyectos</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2026 Willian Ruiz. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
     <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
