@@ -4,31 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Willian Ruiz - Técnico en Desarrollo de Software con experiencia en .NET, WPF, Angular y más">
+    <meta name="description"
+        content="Willian Ruiz - Tecnico en Desarrollo de Software con experiencia en .NET, WPF, Angular, APIs REST y sistemas transaccionales">
     <title>Willian Ruiz - Desarrollador de Software</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <!-- Navigation -->
+    <a href="#contenido-principal" class="skip-link">Saltar al contenido</a>
+
     <nav class="navbar" id="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">WR</a>
+            <a href="#inicio" class="nav-logo" aria-label="Ir al inicio">WR</a>
             <div class="nav-menu" id="navMenu">
                 <a href="#inicio" class="nav-link active">Inicio</a>
+                <a href="#resumen" class="nav-link">Resumen</a>
                 <a href="#experiencia" class="nav-link">Experiencia</a>
                 <a href="#habilidades" class="nav-link">Habilidades</a>
                 <a href="#proyectos" class="nav-link">Proyectos</a>
-                <a href="#educacion" class="nav-link">Educación</a>
+                <a href="#educacion" class="nav-link">Educacion</a>
                 <a href="#contacto" class="nav-link">Contacto</a>
             </div>
             <div class="nav-actions">
                 <button class="theme-toggle" id="themeToggle" aria-label="Cambiar tema">
                     <i class="fas fa-moon"></i>
                 </button>
-                <button class="nav-toggle" id="navToggle" aria-label="Menú">
+                <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false"
+                    aria-controls="navMenu">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -37,7 +43,6 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <header class="hero" id="inicio">
         <div class="hero-bg">
             <div class="hero-shapes">
@@ -47,47 +52,50 @@
             </div>
         </div>
         <div class="container">
-            <div class="hero-content">
+            <div class="hero-content" data-reveal>
                 <div class="hero-text">
-                    <span class="hero-subtitle">👋 ¡Hola! Soy</span>
+                    <span class="hero-subtitle">Hola, soy Willian Ruiz</span>
                     <h1 class="hero-title">Willian Ruiz</h1>
-                    <h2 class="hero-role">Técnico en Desarrollo de Software</h2>
+                    <h2 class="hero-role">Tecnico en Desarrollo de Software</h2>
                     <p class="hero-description">
-                        Con más de <strong>3 años de experiencia</strong> creando soluciones tecnológicas 
-                        innovadoras para aplicaciones de escritorio, web y sistemas interactivos.
+                        Con mas de <strong>3 anos de experiencia</strong> construyendo soluciones con .NET, WPF,
+                        Angular y SQL Server para entornos empresariales, quioscos de autoservicio y sistemas
+                        transaccionales.
                     </p>
                     <div class="hero-stats">
                         <div class="stat-item">
                             <span class="stat-number">3+</span>
-                            <span class="stat-label">Años de Experiencia</span>
+                            <span class="stat-label">Anos de experiencia</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-number">10+</span>
-                            <span class="stat-label">Proyectos Completados</span>
+                            <span class="stat-label">Proyectos completados</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-number">5+</span>
-                            <span class="stat-label">Certificaciones</span>
+                            <span class="stat-label">Certificaciones y cursos</span>
                         </div>
                     </div>
                     <div class="hero-actions">
                         <a href="#contacto" class="btn btn-primary">
                             <i class="fas fa-paper-plane"></i>
-                            Contáctame
+                            Contactame
                         </a>
                         <a href="#proyectos" class="btn btn-secondary">
                             <i class="fas fa-folder-open"></i>
-                            Ver Proyectos
+                            Ver proyectos
                         </a>
                     </div>
                     <div class="hero-social">
-                        <a href="https://github.com/" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                        <a href="https://github.com/" target="_blank" rel="noopener" class="social-link"
+                            aria-label="GitHub" id="heroGithub">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                        <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-link"
+                            aria-label="LinkedIn" id="heroLinkedin">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="mailto:Wilyd2@hotmail.com" class="social-link" aria-label="Email">
+                        <a href="mailto:Wilyd2@hotmail.com" class="social-link" aria-label="Email" id="heroEmail">
                             <i class="fas fa-envelope"></i>
                         </a>
                     </div>
@@ -99,26 +107,90 @@
                         </div>
                         <div class="profile-badge">
                             <i class="fas fa-check-circle"></i>
-                            Disponible para trabajar
+                            Disponible para nuevas oportunidades
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="scroll-indicator">
-            <a href="#experiencia" aria-label="Scroll down">
+            <a href="#resumen" aria-label="Ir al resumen profesional">
                 <span class="mouse">
                     <span class="mouse-wheel"></span>
                 </span>
-                <span class="scroll-text">Scroll</span>
+                <span class="scroll-text">Ver perfil</span>
             </a>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <!-- Experience Section -->
-        <section class="section" id="experiencia">
+    <main class="main-content" id="contenido-principal">
+        <section class="section" id="resumen" data-reveal>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Resumen Ejecutivo</span>
+                    <h2 class="section-title">
+                        <i class="fas fa-bullseye"></i>
+                        Perfil con foco en impacto real
+                    </h2>
+                    <p class="section-subtitle">
+                        El README sugeria reforzar el resumen ejecutivo, mejorar la lectura para reclutadores,
+                        destacar soft skills y dejar el CV listo para imprimir o exportar como PDF.
+                    </p>
+                </div>
+                <div class="overview-grid">
+                    <article class="overview-summary" data-reveal>
+                        <span class="eyebrow">Valor profesional</span>
+                        <h3 class="overview-title">Software empresarial confiable, usable y alineado con negocio</h3>
+                        <p class="overview-lead">
+                            Desarrollador enfocado en <strong>.NET, WPF, Angular, APIs REST y SQL Server</strong>,
+                            con experiencia construyendo aplicaciones de escritorio, interfaces responsivas e
+                            integraciones con hardware y pasarelas de pago para escenarios operativos exigentes.
+                        </p>
+                        <div class="highlight-grid">
+                            <article class="highlight-card" data-reveal>
+                                <i class="fas fa-server"></i>
+                                <h3>Backend y arquitectura</h3>
+                                <p>APIs REST, Clean Architecture y diseno orientado a mantenimiento y escalabilidad.</p>
+                            </article>
+                            <article class="highlight-card" data-reveal>
+                                <i class="fas fa-desktop"></i>
+                                <h3>WPF e integraciones</h3>
+                                <p>Aplicaciones conectadas con datofonos, lectores QR, biometria y otros perifericos.</p>
+                            </article>
+                            <article class="highlight-card" data-reveal>
+                                <i class="fas fa-chart-line"></i>
+                                <h3>Impacto operativo</h3>
+                                <p>Automatizacion, experiencia de usuario y estabilidad para procesos de negocio.</p>
+                            </article>
+                        </div>
+                    </article>
+                    <aside class="keywords-card" data-reveal>
+                        <span class="eyebrow">Palabras clave ATS</span>
+                        <h3>Como se posiciona el perfil</h3>
+                        <p class="overview-lead">
+                            Terminos relevantes para vacantes de desarrollo .NET, integracion de sistemas,
+                            software empresarial y frontend moderno.
+                        </p>
+                        <div class="keyword-cloud" aria-label="Palabras clave para sistemas ATS">
+                            <span>.NET</span>
+                            <span>WPF</span>
+                            <span>Angular</span>
+                            <span>TypeScript</span>
+                            <span>C#</span>
+                            <span>SQL Server</span>
+                            <span>APIs REST</span>
+                            <span>Clean Architecture</span>
+                            <span>DDD</span>
+                            <span>MVVM</span>
+                            <span>Integracion de hardware</span>
+                            <span>Pasarelas de pago</span>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="experiencia" data-reveal>
             <div class="container">
                 <div class="section-header">
                     <span class="section-tag">Mi Trayectoria</span>
@@ -126,10 +198,13 @@
                         <i class="fas fa-briefcase"></i>
                         Experiencia Laboral
                     </h2>
-                    <p class="section-subtitle">Profesional con experiencia en desarrollo de software empresarial</p>
+                    <p class="section-subtitle">
+                        Experiencia en desarrollo de software empresarial, integraciones complejas y soluciones
+                        orientadas a operacion real.
+                    </p>
                 </div>
                 <div class="timeline">
-                    <div class="timeline-item">
+                    <div class="timeline-item" data-reveal>
                         <div class="timeline-marker">
                             <i class="fas fa-building"></i>
                         </div>
@@ -149,35 +224,34 @@
                                     </span>
                                     <span class="location">
                                         <i class="fas fa-map-marker-alt"></i>
-                                        Medellín, Colombia
+                                        Medellin, Colombia
                                     </span>
                                 </div>
                             </div>
                             <p class="job-description">
-                                Desarrollo de aplicaciones WPF para quioscos agilizadores de última generación, 
-                                integrando múltiples tecnologías de hardware y software para crear soluciones 
-                                de autoservicio completas.
+                                Desarrollo de aplicaciones WPF para quioscos agilizadores de ultima generacion,
+                                integrando hardware y software para ofrecer soluciones completas de autoservicio.
                             </p>
                             <ul class="job-responsibilities">
                                 <li>
                                     <i class="fas fa-check"></i>
-                                    Desarrollo de aplicaciones WPF con arquitectura MVVM utilizando .NET
+                                    Desarrollo de aplicaciones WPF con arquitectura MVVM utilizando .NET.
                                 </li>
                                 <li>
                                     <i class="fas fa-check"></i>
-                                    Integración con pasarelas de pago (datáfonos, lectores QR, biométricos, palm scan)
+                                    Integracion con pasarelas de pago, datofonos, lectores QR, biometria y palm scan.
                                 </li>
                                 <li>
                                     <i class="fas fa-check"></i>
-                                    Gestión de bases de datos SQL Server y SQLite con optimización de consultas
+                                    Gestion de bases de datos SQL Server y SQLite con optimizacion de consultas.
                                 </li>
                                 <li>
                                     <i class="fas fa-check"></i>
-                                    Colaboración estrecha con equipos de hardware para implementaciones funcionales
+                                    Colaboracion estrecha con equipos de hardware para implementaciones funcionales.
                                 </li>
                                 <li>
                                     <i class="fas fa-check"></i>
-                                    Implementación de patrones de diseño y mejores prácticas de código limpio
+                                    Aplicacion de patrones de diseno y buenas practicas de codigo limpio.
                                 </li>
                             </ul>
                             <div class="job-tech">
@@ -191,7 +265,7 @@
                         </div>
                     </div>
 
-                    <div class="timeline-item">
+                    <div class="timeline-item" data-reveal>
                         <div class="timeline-marker">
                             <i class="fas fa-building"></i>
                         </div>
@@ -216,33 +290,29 @@
                                 </div>
                             </div>
                             <p class="job-description">
-                                Desarrollo full-stack de aplicaciones empresariales utilizando tecnologías .NET 
-                                y Angular, con enfoque en arquitectura limpia y metodologías ágiles.
+                                Desarrollo full-stack de aplicaciones empresariales con tecnologias .NET y Angular,
+                                manteniendo foco en arquitectura limpia, colaboracion agil y calidad tecnica.
                             </p>
                             <ul class="job-responsibilities">
                                 <li>
                                     <i class="fas fa-check"></i>
-                                    Desarrollo de APIs RESTful con C# y .NET Core siguiendo Clean Architecture
+                                    Desarrollo de APIs RESTful con C# y .NET Core siguiendo Clean Architecture.
                                 </li>
                                 <li>
                                     <i class="fas fa-check"></i>
-                                    Implementación de interfaces de usuario responsivas con Angular y TypeScript
+                                    Implementacion de interfaces responsivas con Angular y TypeScript.
                                 </li>
                                 <li>
                                     <i class="fas fa-check"></i>
-                                    Diseño y optimización de bases de datos SQL Server
+                                    Diseno y optimizacion de bases de datos SQL Server.
                                 </li>
                                 <li>
                                     <i class="fas fa-check"></i>
-                                    Integración de pasarelas de pago y servicios de terceros
+                                    Integracion de pasarelas de pago y servicios de terceros.
                                 </li>
                                 <li>
                                     <i class="fas fa-check"></i>
-                                    Participación activa en reuniones diarias y sprint planning (Scrum)
-                                </li>
-                                <li>
-                                    <i class="fas fa-check"></i>
-                                    Control de versiones con Git y Code Reviews
+                                    Participacion activa en reuniones diarias, sprint planning y code reviews.
                                 </li>
                             </ul>
                             <div class="job-tech">
@@ -256,7 +326,7 @@
                             </div>
                             <div class="job-duration">
                                 <i class="fas fa-clock"></i>
-                                Duración: 24 meses y 13 días
+                                Duracion aproximada: 24 meses
                             </div>
                         </div>
                     </div>
@@ -264,22 +334,21 @@
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section class="section section-alt" id="habilidades">
+        <section class="section section-alt" id="habilidades" data-reveal>
             <div class="container">
                 <div class="section-header">
                     <span class="section-tag">Competencias</span>
                     <h2 class="section-title">
                         <i class="fas fa-code"></i>
-                        Habilidades Técnicas
+                        Habilidades Tecnicas
                     </h2>
-                    <p class="section-subtitle">Tecnologías y herramientas que domino</p>
+                    <p class="section-subtitle">Tecnologias y herramientas con las que construyo soluciones.</p>
                 </div>
                 <div class="skills-container">
-                    <div class="skills-category">
+                    <div class="skills-category" data-reveal>
                         <h3 class="category-title">
                             <i class="fas fa-laptop-code"></i>
-                            Lenguajes de Programación
+                            Lenguajes de Programacion
                         </h3>
                         <div class="skills-grid">
                             <div class="skill-item">
@@ -321,10 +390,10 @@
                         </div>
                     </div>
 
-                    <div class="skills-category">
+                    <div class="skills-category" data-reveal>
                         <h3 class="category-title">
                             <i class="fas fa-layer-group"></i>
-                            Frameworks y Librerías
+                            Frameworks y Librerias
                         </h3>
                         <div class="skills-grid">
                             <div class="skill-item">
@@ -366,7 +435,7 @@
                         </div>
                     </div>
 
-                    <div class="skills-category">
+                    <div class="skills-category" data-reveal>
                         <h3 class="category-title">
                             <i class="fas fa-database"></i>
                             Bases de Datos
@@ -393,10 +462,10 @@
                         </div>
                     </div>
 
-                    <div class="skills-category">
+                    <div class="skills-category" data-reveal>
                         <h3 class="category-title">
                             <i class="fas fa-tools"></i>
-                            Herramientas y Metodologías
+                            Herramientas y Metodologias
                         </h3>
                         <div class="skills-grid">
                             <div class="skill-item">
@@ -410,7 +479,7 @@
                             </div>
                             <div class="skill-item">
                                 <div class="skill-info">
-                                    <span class="skill-name">Scrum / Ágil</span>
+                                    <span class="skill-name">Scrum / Agil</span>
                                     <span class="skill-level">85%</span>
                                 </div>
                                 <div class="skill-bar">
@@ -438,11 +507,27 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="soft-skills-card" data-reveal>
+                    <span class="eyebrow">Habilidades blandas</span>
+                    <h3>Fortalezas visibles para trabajo en equipo</h3>
+                    <p class="overview-lead">
+                        El README sugeria hacer mas evidente la parte humana del perfil. Estas capacidades
+                        complementan el stack tecnico y ayudan a sostener entregas reales.
+                    </p>
+                    <div class="soft-skills-list">
+                        <span>Comunicacion clara</span>
+                        <span>Trabajo en equipo</span>
+                        <span>Resolucion de problemas</span>
+                        <span>Liderazgo tecnico</span>
+                        <span>Adaptabilidad</span>
+                        <span>Enfoque en calidad</span>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section class="section" id="proyectos">
+        <section class="section" id="proyectos" data-reveal>
             <div class="container">
                 <div class="section-header">
                     <span class="section-tag">Portafolio</span>
@@ -450,27 +535,26 @@
                         <i class="fas fa-project-diagram"></i>
                         Proyectos Destacados
                     </h2>
-                    <p class="section-subtitle">Soluciones que he desarrollado</p>
+                    <p class="section-subtitle">Soluciones desarrolladas con foco tecnico y valor operativo.</p>
                 </div>
                 <div class="projects-grid">
-                    <article class="project-card">
+                    <article class="project-card" data-reveal>
                         <div class="project-header">
                             <div class="project-icon">
                                 <i class="fas fa-cash-register"></i>
                             </div>
-                            <span class="project-badge">En Producción</span>
+                            <span class="project-badge">En produccion</span>
                         </div>
                         <h3 class="project-title">Quioscos Agilizadores WPF</h3>
                         <p class="project-description">
-                            Sistema completo de quioscos de autoservicio para puntos de venta, integrando 
-                            múltiples periféricos de hardware y pasarelas de pago para ofrecer una experiencia 
-                            de compra fluida y segura.
+                            Sistema de autoservicio para puntos de venta con multiples perifericos de hardware
+                            y pasarelas de pago para una experiencia de compra fluida.
                         </p>
                         <ul class="project-features">
-                            <li><i class="fas fa-check-circle"></i> Integración con datáfonos y lectores QR</li>
-                            <li><i class="fas fa-check-circle"></i> Autenticación biométrica y por palma</li>
-                            <li><i class="fas fa-check-circle"></i> Múltiples pasarelas de pago</li>
-                            <li><i class="fas fa-check-circle"></i> Interfaz táctil intuitiva</li>
+                            <li><i class="fas fa-check-circle"></i> Integracion con datofonos y lectores QR.</li>
+                            <li><i class="fas fa-check-circle"></i> Autenticacion biometrica y por palma.</li>
+                            <li><i class="fas fa-check-circle"></i> Multiples pasarelas de pago.</li>
+                            <li><i class="fas fa-check-circle"></i> Interfaz tactil intuitiva.</li>
                         </ul>
                         <div class="project-tech">
                             <span class="tech-tag">.NET</span>
@@ -481,7 +565,7 @@
                         </div>
                     </article>
 
-                    <article class="project-card">
+                    <article class="project-card" data-reveal>
                         <div class="project-header">
                             <div class="project-icon">
                                 <i class="fas fa-server"></i>
@@ -490,14 +574,14 @@
                         </div>
                         <h3 class="project-title">API REST con Clean Architecture</h3>
                         <p class="project-description">
-                            API REST empresarial desarrollada siguiendo los principios de Clean Architecture 
-                            y Domain Driven Design (DDD), garantizando código mantenible, escalable y testeable.
+                            API REST empresarial construida con principios de Clean Architecture y DDD
+                            para favorecer mantenimiento, escalabilidad y pruebas.
                         </p>
                         <ul class="project-features">
-                            <li><i class="fas fa-check-circle"></i> Arquitectura en capas separadas</li>
-                            <li><i class="fas fa-check-circle"></i> Inversión de dependencias</li>
-                            <li><i class="fas fa-check-circle"></i> Domain Driven Design</li>
-                            <li><i class="fas fa-check-circle"></i> Patrón Repository y Unit of Work</li>
+                            <li><i class="fas fa-check-circle"></i> Arquitectura en capas separadas.</li>
+                            <li><i class="fas fa-check-circle"></i> Inversion de dependencias.</li>
+                            <li><i class="fas fa-check-circle"></i> Domain Driven Design.</li>
+                            <li><i class="fas fa-check-circle"></i> Repository y Unit of Work.</li>
                         </ul>
                         <div class="project-tech">
                             <span class="tech-tag">C#</span>
@@ -508,7 +592,7 @@
                         </div>
                     </article>
 
-                    <article class="project-card">
+                    <article class="project-card" data-reveal>
                         <div class="project-header">
                             <div class="project-icon">
                                 <i class="fas fa-desktop"></i>
@@ -517,14 +601,14 @@
                         </div>
                         <h3 class="project-title">Interfaces Web con Angular</h3>
                         <p class="project-description">
-                            Desarrollo de interfaces de usuario modernas, responsivas y accesibles utilizando 
-                            Angular, integradas con APIs REST para aplicaciones empresariales.
+                            Desarrollo de interfaces modernas, responsivas y accesibles integradas con APIs REST
+                            para aplicaciones empresariales.
                         </p>
                         <ul class="project-features">
-                            <li><i class="fas fa-check-circle"></i> Componentes reutilizables</li>
-                            <li><i class="fas fa-check-circle"></i> Diseño responsive y mobile-first</li>
-                            <li><i class="fas fa-check-circle"></i> Integración con APIs REST</li>
-                            <li><i class="fas fa-check-circle"></i> Gestión de estado con RxJS</li>
+                            <li><i class="fas fa-check-circle"></i> Componentes reutilizables.</li>
+                            <li><i class="fas fa-check-circle"></i> Diseno responsive y mobile-first.</li>
+                            <li><i class="fas fa-check-circle"></i> Integracion con APIs REST.</li>
+                            <li><i class="fas fa-check-circle"></i> Gestion de estado con RxJS.</li>
                         </ul>
                         <div class="project-tech">
                             <span class="tech-tag">Angular</span>
@@ -538,25 +622,24 @@
             </div>
         </section>
 
-        <!-- Education Section -->
-        <section class="section section-alt" id="educacion">
+        <section class="section section-alt" id="educacion" data-reveal>
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Formación</span>
+                    <span class="section-tag">Formacion</span>
                     <h2 class="section-title">
                         <i class="fas fa-graduation-cap"></i>
-                        Educación y Certificaciones
+                        Educacion y Certificaciones
                     </h2>
-                    <p class="section-subtitle">Mi formación académica y profesional</p>
+                    <p class="section-subtitle">Formacion tecnica, aprendizaje continuo y enfoque practico.</p>
                 </div>
                 <div class="education-grid">
                     <div class="education-main">
-                        <div class="education-card">
+                        <div class="education-card" data-reveal>
                             <div class="education-icon">
                                 <i class="fas fa-graduation-cap"></i>
                             </div>
                             <div class="education-content">
-                                <h3>Técnico en Desarrollo de Software</h3>
+                                <h3>Tecnico en Desarrollo de Software</h3>
                                 <span class="institution">CESDE - Centro de Estudios Especializados</span>
                                 <span class="education-period">
                                     <i class="fas fa-calendar-alt"></i>
@@ -564,16 +647,16 @@
                                 </span>
                                 <span class="education-status">
                                     <i class="fas fa-check-circle"></i>
-                                    ¡Graduado!
+                                    Graduado
                                 </span>
                                 <p class="education-description">
-                                    Formación especializada en desarrollo de software con enfoque práctico en 
-                                    tecnologías .NET, bases de datos relacionales y metodologías ágiles de desarrollo.
+                                    Formacion especializada en desarrollo de software con enfoque practico
+                                    en tecnologias .NET, bases de datos relacionales y metodologias agiles.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="certifications-grid">
+                    <div class="certifications-grid" data-reveal>
                         <h3 class="certifications-title">
                             <i class="fas fa-certificate"></i>
                             Certificaciones y Cursos
@@ -584,7 +667,7 @@
                                     <i class="fas fa-award"></i>
                                 </div>
                                 <div class="cert-content">
-                                    <h4>Metodologías Ágiles</h4>
+                                    <h4>Metodologias Agiles</h4>
                                     <span class="cert-provider">Universidad UCO</span>
                                 </div>
                             </div>
@@ -628,42 +711,46 @@
                     </div>
                 </div>
                 <div class="additional-info">
-                    <div class="info-card">
+                    <div class="info-card" data-reveal>
                         <i class="fas fa-language"></i>
                         <h4>Idiomas</h4>
-                        <p>Español (Nativo)</p>
+                        <p>Espanol (Nativo)</p>
                     </div>
-                    <div class="info-card">
+                    <div class="info-card" data-reveal>
                         <i class="fas fa-heart"></i>
                         <h4>Intereses</h4>
-                        <p>Fútbol, Ajedrez, Tecnología</p>
+                        <p>Futbol, Ajedrez, Tecnologia</p>
+                    </div>
+                    <div class="info-card" data-reveal>
+                        <i class="fas fa-user-check"></i>
+                        <h4>Diferencial profesional</h4>
+                        <p>Capacidad para moverme entre backend, frontend, escritorio e integraciones complejas.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section class="section contact-section" id="contacto">
+        <section class="section contact-section" id="contacto" data-reveal>
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">¿Hablamos?</span>
+                    <span class="section-tag">Hablemos</span>
                     <h2 class="section-title">
                         <i class="fas fa-envelope"></i>
                         Contacto
                     </h2>
-                    <p class="section-subtitle">Estoy disponible para nuevas oportunidades</p>
+                    <p class="section-subtitle">Disponible para nuevas oportunidades, proyectos y conversaciones tecnicas.</p>
                 </div>
                 <div class="contact-grid">
-                    <div class="contact-info-card">
-                        <h3>Información de Contacto</h3>
-                        <p>¿Tienes un proyecto en mente o una oportunidad laboral? ¡No dudes en contactarme!</p>
+                    <div class="contact-info-card" data-reveal>
+                        <h3>Informacion de contacto</h3>
+                        <p>Si tienes una oportunidad laboral o un proyecto en mente, estare feliz de conversar.</p>
                         <div class="contact-methods">
                             <a href="tel:+573147743846" class="contact-method">
                                 <div class="contact-icon">
                                     <i class="fas fa-phone"></i>
                                 </div>
                                 <div class="contact-details">
-                                    <span class="contact-label">Teléfono</span>
+                                    <span class="contact-label">Telefono</span>
                                     <span class="contact-value">(57) 314 774 3846</span>
                                 </div>
                             </a>
@@ -672,7 +759,7 @@
                                     <i class="fas fa-mobile-alt"></i>
                                 </div>
                                 <div class="contact-details">
-                                    <span class="contact-label">Móvil</span>
+                                    <span class="contact-label">Movil</span>
                                     <span class="contact-value">(57) 317 862 59 55</span>
                                 </div>
                             </a>
@@ -690,38 +777,40 @@
                                     <i class="fas fa-map-marker-alt"></i>
                                 </div>
                                 <div class="contact-details">
-                                    <span class="contact-label">Ubicación</span>
+                                    <span class="contact-label">Ubicacion</span>
                                     <span class="contact-value">Bello, Antioquia, Colombia</span>
                                 </div>
                             </div>
                         </div>
                         <div class="contact-social">
-                            <span>Sígueme en:</span>
+                            <span>Sigueme en:</span>
                             <div class="social-links">
-                                <a href="https://github.com/" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
+                                <a href="https://github.com/" target="_blank" rel="noopener" class="social-btn"
+                                    aria-label="GitHub" id="contactGithub">
                                     <i class="fab fa-github"></i>
                                 </a>
-                                <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+                                <a href="https://linkedin.com/" target="_blank" rel="noopener" class="social-btn"
+                                    aria-label="LinkedIn" id="contactLinkedin">
                                     <i class="fab fa-linkedin-in"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="contact-cta">
+                    <div class="contact-cta" data-reveal>
                         <div class="cta-content">
                             <div class="cta-icon">
                                 <i class="fas fa-rocket"></i>
                             </div>
-                            <h3>¿Listo para trabajar juntos?</h3>
-                            <p>Descarga mi CV completo o contáctame directamente</p>
+                            <h3>Listo para imprimir o enviar</h3>
+                            <p>Esta version del CV esta optimizada para navegador, impresion y guardado como PDF.</p>
                             <div class="cta-buttons">
                                 <button class="btn btn-primary btn-download" id="downloadBtn">
                                     <i class="fas fa-download"></i>
-                                    Descargar CV
+                                    <span>Descargar PDF</span>
                                 </button>
-                                <a href="mailto:Wilyd2@hotmail.com" class="btn btn-secondary">
+                                <a href="mailto:Wilyd2@hotmail.com" class="btn btn-secondary" id="contactEmailButton">
                                     <i class="fas fa-envelope"></i>
-                                    Enviar Email
+                                    Enviar email
                                 </a>
                             </div>
                         </div>
@@ -731,34 +820,32 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
                     <span class="footer-logo">WR</span>
-                    <p>Willian Ruiz - Desarrollador de Software</p>
+                    <p>Willian Ruiz - Tecnico en Desarrollo de Software</p>
                 </div>
                 <div class="footer-links">
                     <a href="#inicio">Inicio</a>
+                    <a href="#resumen">Resumen</a>
                     <a href="#experiencia">Experiencia</a>
                     <a href="#habilidades">Habilidades</a>
                     <a href="#proyectos">Proyectos</a>
                     <a href="#contacto">Contacto</a>
                 </div>
                 <div class="footer-copyright">
-                    <p>&copy; 2026 Willian Ruiz. Todos los derechos reservados.</p>
+                    <p>&copy; <span id="currentYear">2026</span> Willian Ruiz. Todos los derechos reservados.</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
     <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- Scripts -->
     <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
